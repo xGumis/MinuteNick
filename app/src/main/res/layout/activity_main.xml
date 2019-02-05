@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Main">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/time" android:gravity="center" android:layout_height="200dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/minutes_tens" android:gravity="center"
+        >
+            <Button
+                    android:text="@string/plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/minutes_tens_plus" android:textStyle="bold"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" android:id="@+id/minutes_tens_text" android:textSize="36sp"
+                    android:textAlignment="center" android:textStyle="bold"/>
+            <Button
+                    android:text="@string/minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/minutes_tens_minus" android:textStyle="bold"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/minutes_single" android:gravity="center"
+        >
+            <Button
+                    android:text="@string/plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/minutes_single_plus"
+                    android:textStyle="bold" android:textSize="20sp"/>
+            <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" android:id="@+id/minutes_single_text" android:textSize="36sp"
+                    android:textAlignment="center" android:textStyle="bold"/>
+            <Button
+                    android:text="@string/minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/minutes_single_minus"
+                    android:textStyle="bold" android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/separator" android:gravity="center"
+        >
+            <TextView
+                    android:text="@string/separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/separator_text" android:textSize="36sp"
+                    android:textStyle="bold" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/seconds_tens" android:gravity="center"
+        >
+            <Button
+                    android:text="@string/plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/seconds_tens_plus" android:textStyle="bold"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" android:id="@+id/seconds_tens_text" android:textSize="36sp"
+                    android:textAlignment="center" android:textStyle="bold"/>
+            <Button
+                    android:text="@string/minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/seconds_tens_minus" android:textStyle="bold"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/seconds_single" android:gravity="center"
+        >
+            <Button
+                    android:text="@string/plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/seconds_single_plus"
+                    android:textStyle="bold" android:textSize="20sp"/>
+            <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" android:id="@+id/seconds_single_text" android:textSize="36sp"
+                    android:textAlignment="center" android:textStyle="bold"/>
+            <Button
+                    android:text="@string/minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/seconds_single_minus"
+                    android:textStyle="bold" android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/buttons" android:gravity="center"
+    >
+        <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/play" android:layout_weight="1"
+                android:text="@string/start"/>
+        <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/stop" android:layout_weight="1"/>
+        <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/pause" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

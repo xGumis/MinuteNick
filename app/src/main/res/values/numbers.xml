@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="minutes_tens">0</integer>
+    <integer name="minutes_single">0</integer>
+    <integer name="seconds_tens">0</integer>
+    <integer name="seconds_single">0</integer>
+</resources>
